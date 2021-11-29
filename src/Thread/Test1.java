@@ -1,6 +1,7 @@
-public class Test_Thread extends Thread{
+package Thread;
+public class Test1 extends Thread{
     int seq;
-    public Test_Thread(int seq){
+    public Test1(int seq){
         this.seq = seq;
     }
     public void run() {
@@ -14,7 +15,7 @@ public class Test_Thread extends Thread{
     public static void main(String[] args){
         
         for(int i = 0; i < 10; i++){
-            Thread t = new Test_Thread(i);
+            Thread t = new Test1(i);
             t.start();
         }
         
